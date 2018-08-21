@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header{
+    grid-area: header;
+    background-color: lightslategray;
+    text-align: center;
+    color: brown;
+}
+
+.home{
+    grid-area: home;
+    background-color: white;
+}
+
+.chatbot{
+    grid-area: chatbot;
+    background-color: lightyellow;
+    height: calc(90vh - 60px);
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: gray;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    bottom: 0;
+    position: absolute;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'home   home   home   chatbot'
+    'footer footer footer footer'
+}
